@@ -1,0 +1,166 @@
+Id: Unique number that serves as a patient identifier.
+
+date: Date that the patient was added to the waitlist.
+
+age_at_list_registration: Age of the patient in years when they registered for the kidney transplant waitlist.
+
+age_cat: Identifies which age category the patient falls into.
+
+    Below18			Less than 18 years old
+    From18to60		Between 18 and 60 years old
+    Over60			Over 60 years old
+
+time_on_Dialysis: Duration of time on dialysis in months.
+
+race: Identifies the race of the patient (categories are specific to Brazilian culture, so they cannot be translated properly). 
+
+    Amarela
+    Branca
+    Parda
+    Negra
+
+sex: Identifies the patient's sex.
+
+    M	Male
+    F	Female
+
+underline_disease: Identifies if a patient has any of the following underlying diseases.
+
+    Hemolytic uremic syndrome (HUS)
+    Diabetes    
+    Glumerulo-Nephrotic Syndrome (GNS)     
+    Pylonephritis (PN)     
+    Other
+
+diabetes: Identifies if the patient has diabetes.
+
+    1	Patient does NOT have diabetes
+    0	Patient has diabetes
+
+
+Blood_type: Identifies the blood type of the patient.
+
+    A
+    AB
+    B
+    O
+
+number_transfusion: Number of transfusions that a patient is subject to.
+
+gestation: Identifies if the person is pregnant
+
+    N	No
+    Y	Yes
+
+number_gestation: Gestational age in weeks
+
+prior_transplant: Identifies if the patient had a prior transplant.
+
+    N	No
+    Y	Yes
+
+number_prior_transplant: The number of prior transplants a patient has had.
+
+subregion: Identifies the subregion of Brazil from which the person is from.
+
+    UNIFESP
+    HCFMUSP 
+    FUNDERP     
+    UNICAMP
+
+cPRA: Very important criteria by which doctors select patients for transplants. cPRA stands for calculated panel-reactive antibody, and it measures a patient's sensitivity to HLA antigens and the incompatibility of donated organs. A higher value indicates a higher likelihood that an introduced kidney will be rejected by your body. (Numerical feature)
+
+cPRA_cat: Identifies categories within which the patient's cPRA value falls.
+
+    Zero
+    ZeroTo50       
+    Over80         
+    From50To80
+
+HLA_A1
+HLA_A2
+HLA_B1
+HLA_B2
+HLA_DR1
+HLA_DR2
+DR_00
+B_00
+A_00
+
+calculated_frequency_DR.f1
+calculated_frequency_DR.f2
+calculated_frequency_DR.f
+calculated_frequency_B.f1
+calculated_frequency_B.f2
+calculated_frequency_B.f
+calculated_frequency_A.f1
+calculated_frequency_A.f2
+calculated_frequency_A.f: all of these are calculated HLA allele frequencies based on the allele distribution in the population in that geographic area.
+
+chagas: Identifies if the patient has chagas disease.
+
+    N	No, the patient does not have chagas
+    Y	Yes, the patient has chagas
+    Missing
+
+HBc_antibodies: Identifies if the patient has total hepatitis B core antibodies.
+
+    N	No, the patient has never been infected with hepatitis B virus
+    Y	Yes, the patient has been or is infected with hepatitis B virus
+    Missing
+
+HCV_antibodies: Identifies if the patient has antibodies to hepatitis C virus (HCV)
+
+    N	No, the patient has never been infected with HCV
+    Y	Yes, the patient has been or is infected with HCV
+    Missing
+    
+agHBs: Identifies if the patient has the hepatitis B antigen (infected with hepatitis B).
+
+    N	No, the patient does not have hepatitis B
+    Y	Yes, the patient has hepatitis B
+    Missing
+
+patient_still_on_list
+
+death: Identifies whether the patient died
+
+    N	No
+    Y	Yes
+
+Time_death:
+
+Transplant: Identifies whether the patient received a transplant, did not receive a transplant, or died.
+
+    N			No
+    Y			Yes
+    DeathList	Patient died
+
+Transplant_Y_N: Identifies whether the patient received a transplant or not.
+
+    N	No
+    Y	Yes
+
+Time_Tx: Time to event in months. 
+
+removed_list: Identifies whether a patient was removed from the waitlist.
+
+    N	No
+    Y	Yes
+
+razon_removed: Identifies the reason that a patient was removed from the waitlist.
+
+    Removido (suspenso > 365 dias)
+    Transferido para outro Estado       
+    Não quer ser transplantado        
+    Removido sem condições clínicas    
+    Removido pela equipe
+    Função renal recuperada
+    Abandonou o tratamento
+    Removido administrativo 
+    Removido (inscrição duplicada)
+    Transferido de Equipe  
+
+time: days
+
+event
