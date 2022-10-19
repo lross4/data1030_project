@@ -73,29 +73,45 @@ cPRA: Very important criteria by which doctors select patients for transplants. 
 cPRA_cat: Identifies categories within which the patient's cPRA value falls.
 
     Zero
-    ZeroTo50       
-    Over80         
+    ZeroTo50         
     From50To80
+    Over80
+    
+The 9 following features are related to a person's Human Leukocyte Antigen matching scores. These are important criteria for the allocation of kidney transplants. A person's HLA DR score has the highest weight in terms of allocation criteria, followed by HLA B and HLA A.
 
-HLA_A1
-HLA_A2
-HLA_B1
-HLA_B2
-HLA_DR1
-HLA_DR2
-DR_00
-B_00
-A_00
+    HLA_A1: Human Leukocyte Antigen A1 score
+    HLA_A2: Human Leukocyte Antigen A1 score
+    HLA_B1: Human Leukocyte Antigen B1 score
+    HLA_B2: Human Leukocyte Antigen B2 score
+    HLA_DR1: Human Leukocyte Antigen DR1 score
+    HLA_DR2: Human Leukocyte Antigen DR1 score
 
-calculated_frequency_DR.f1
-calculated_frequency_DR.f2
-calculated_frequency_DR.f
-calculated_frequency_B.f1
-calculated_frequency_B.f2
-calculated_frequency_B.f
-calculated_frequency_A.f1
-calculated_frequency_A.f2
-calculated_frequency_A.f: all of these are calculated HLA allele frequencies based on the allele distribution in the population in that geographic area.
+    DR_00: Identifies whether or not a person is heterozygous or homozygous for the HLA DR allele.
+
+        heterozygous
+        homozygous
+
+    B_00: Identifies whether or not a person is heterozygous or homozygous for the HLA B allele.
+
+        heterozygous
+        homozygous
+    
+    A_00: Identifies whether or not a person is heterozygous or homozygous for the HLA A allele.
+   
+        heterozygous
+        homozygous
+        
+The 9 following features are calculated HLA allele frequencies in the Brazilian population. These features show the distribution of the DR, B, and A alleles for HLA in the population.
+
+    calculated_frequency_DR.f1
+    calculated_frequency_DR.f2
+    calculated_frequency_DR.f
+    calculated_frequency_B.f1
+    calculated_frequency_B.f2
+    calculated_frequency_B.f
+    calculated_frequency_A.f1
+    calculated_frequency_A.f2
+    calculated_frequency_A.f
 
 chagas: Identifies if the patient has chagas disease.
 
@@ -128,15 +144,16 @@ death: Identifies whether the patient died
     N	No
     Y	Yes
 
-Time_death:
+Time_death: Predicted time to death
 
 Transplant: Identifies whether the patient received a transplant, did not receive a transplant, or died.
+*** THIS FEATURE WAS REMOVED ***
 
     N			No
     Y			Yes
     DeathList	Patient died
 
-Transplant_Y_N: Identifies whether the patient received a transplant or not.
+Transplant_Y_N: Identifies whether the patient received a transplant or not. (TARGET VARIABLE)
 
     N	No
     Y	Yes
@@ -161,6 +178,6 @@ razon_removed: Identifies the reason that a patient was removed from the waitlis
     Removido (inscrição duplicada)
     Transferido de Equipe  
 
-time: days
+time: Time to event in days.
 
-event
+event: Categorizes what happened to the patient.
