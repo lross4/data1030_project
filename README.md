@@ -14,6 +14,10 @@ Logistic regression, linear support vector classification (SVC), random forest, 
 
 Accuracy scores were used to evaluate each model’s performance because they are easily interpretable for classification problems. F-beta scores with beta=0.5 were also calculated. Uncertainties due to splitting and/or non-deterministic ML methods were measured by calculating the standard deviations of the test scores for each model that were found across all 5 random states tested. Global and local feature importances were calculated and visualized.
 
+#### Outlook: Future Work
+In future iterations of this project, one way to improve the performance of this model could be to use the reduced features approach combined with XGBoost. The reduced features approach can help the model better handle missing values in continuous features, and it could improve the accuracy of the model when used in conjunction with XGBoost. Another method that could improve model performance would be using nonlinear SVM classification, as well as tuning the critical probability. 
+One longer-term way to improve this model would be to increase its generalizability by removing Brazil-specific features. Currently, some of the features used in the model are specific to Brazil (e.g. subregion of Brazil), which makes this model only applicable for use in Brazil. Removing those features and increasing the generalizability of the model would allow it to benefit significantly more people on kidney transplant waitlists globally.
+
 #### Organization
 - `data/` contains the raw data downloaded from Kaggle, as well as three csv files which contain the preprocessed training, validation, and test datasets. Descriptions of each feature in the raw data can be found here as well.
 - `figures/` contains all figures produced by the code in the project.
